@@ -1,3 +1,4 @@
+
 import qrcode
 
 def generate_qr_code(data, filename):
@@ -14,7 +15,7 @@ def generate_qr_code(data, filename):
     img.save(filename)
 
 # Example usage:
-website_url = "https://www.example.com"
-filename = "qr_code_website.png"
-generate_qr_code(website_url, filename)
-print(f"QR code for {website_url} saved as {filename}")
+data = "Hello, World!"
+filename = "qr_code.png"
+generate_qr_code(data, filename)
+print(f"QR code saved as {filename}")
